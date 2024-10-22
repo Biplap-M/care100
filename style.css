@@ -1,0 +1,231 @@
+body {
+    font-family: 'Nunito' , sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #121212;
+    position: relative;
+}
+
+
+header {
+    background-color: #121212;
+    padding: 1rem 0;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img{
+    width: 115px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0, 10;
+
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+header nav ul li a:hover {
+    color: #18acc6;
+}
+
+
+.hero {
+    background-image: url('https://img.freepik.com/free-vector/bad-habits-cartoon-concept-with-dengerous-drug-addict-vector-illustration_1284-80090.jpg?t=st=1725356231~exp=1725359831~hmac=d6ca198f11c509ad9a8b481c0dac63bb5c6c2d1c41d37138831498e15a949b47&w=900');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: #2fc92f;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #18acc6;
+
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #f6feff;
+}
+.hero .cta-button {
+    background-color: #375e67;
+    color: #faf1f1;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.hero .cta-button:hover {
+    background-color: #16a2b4;
+}
+
+.health-topics {
+    padding: 60px 0;
+    background-color: #e2dfdf;
+    color: #ffffff;
+}
+
+.health-topics h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0a98c0;
+}
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    gap: 1.5rem;
+}
+.topic {
+    background-color: #21e921;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic:hover {
+    transform: translate(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.top h3 {
+    margin-top: 0;
+    color: #18acc6;
+}
+
+.topic p {
+    color: #ffffff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-bottom: 1.5rem;
+    color: #18acc6;
+}
+
+.modal-content label {
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #333;
+}
+
+.modal-content input[type="email"]
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal-content button[type="submit"] {
+    background-color: #18acc6;
+    color: #fff;
+    padding: 0.8rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #16a2b4;
+}
+
+.popular-topics {
+    padding: 60px 0;
+    background-color: #b6b5b5;
+    color: #ffffff;
+}
+
+.popular-topics h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0a98c0;
+}
+
+footer {
+    background-color: #434040;
+    color: #fefefe;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+@media (max-width:768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hero h2{
+    font-size: 1.75rem;
+}
+.hero p {
+    font-size: 0.9rem;
+}
+
+
